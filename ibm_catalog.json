@@ -1,0 +1,35 @@
+{
+    "products": [
+        {
+            "name" : "DA-teste",
+            "label": "Cloud Object Storage",
+            "version": "1.0.0",
+            "product-kind": "solution",
+            "tags": ["cloud-object-storage", "cos", "storage", "bucket"],
+            "keywords": ["cloud-object-storage", "cos", "storage", "bucket"],
+            "short-description": "Provisiona uma instância do IBM Cloud Object Storage e cria um bucket.",
+            "long-description": "Este módulo Terraform provisiona uma instância do IBM Cloud Object Storage (COS) e cria um bucket dentro dessa instância.",
+            "provider-name": "IBM",
+            "features" : [ {
+                "description": "Provisiona uma instância do IBM Cloud Object Storage e cria um bucket.\n",
+                "title": "Provisionamento de IBM Cloud Object Storage"
+                }
+            ],
+            "flavors": [ {
+                "label": "QuickStart",
+                "name": "quickstart",
+                "configuration" : [
+                    {
+                        "key": "region",
+                        "type": "string",
+                        "default_value" : "br-sao",
+                        "description": "A região onde a instância do Cloud Object Storage será provisionada.",
+                        "required": true,
+                        "options": ["br-sao", "us-south"],
+                        "hidden": false
+                    }
+                ]
+            } ]
+        }
+    ]
+}

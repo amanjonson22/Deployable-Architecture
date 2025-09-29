@@ -7,7 +7,7 @@ variable "ibmcloud_api_key" {
 variable "ibm_resource_group_name" {
   description = "The name of the resource group where the Cloud Object Storage instance is located."
   type        = string
-  default     = "Default"
+  default = "Default"
 }
 
 variable "region" {
@@ -18,7 +18,7 @@ variable "region" {
 
 variable "tags" {
   description = "The tags for the resources"
-  type = string
+  type = list(string)
 }
 
 variable "cos_bucket_name" {

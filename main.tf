@@ -27,8 +27,6 @@ module "cos" {
   kms_key_crn = null
 
   resource_group_id = module.resource_group.resource_group_id
-  
-
 }
 
 
